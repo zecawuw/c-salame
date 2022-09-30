@@ -19,11 +19,11 @@ int main()
 	
 	if(imc <= 18.4){
 		printf("abaixo do peso \n");
-	}else if(imc >= 18.5, imc <= 24.9){
+	}else if(imc >= 18.5 && imc <= 24.9){
 		printf("imc peso normal \n");
-    }else if(imc >=25 , imc <= 29.9){
+    }else if(imc >=25 && imc <= 29.9){
     	printf("imc sobre peso \n");
-	}else if(imc >= 30 , imc <= 39.9){
+	}else if(imc >= 30 && imc <= 39.9){
 		printf("obesidade \n");
 	}else{
 		printf("obesidade grave \n");
