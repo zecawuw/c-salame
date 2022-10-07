@@ -1,3 +1,4 @@
+//preencher um vetor com os numeros de 10 a 20 e depois mostrar o mesmo
 #include <locale.h>
 
 int main()
