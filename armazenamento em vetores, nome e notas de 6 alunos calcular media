@@ -1,0 +1,38 @@
+//armazenamento em vetores, nome e notas de 6 alunos calcular media
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+#include <locale.h>
+
+int main (void){
+    
+    setlocale(LC_ALL,"portuguese");
+    int x;
+    float p1[6], p2[6], media[6], situacao[6];
+    char nome[6][30];
+
+
+    for(x = 0; x < 6; x++){
+    
+       printf("nome... ");
+       scanf("%s", &nome[x]);
+    
+       printf("p1... ");
+       scanf("%f", &p1[x]);
+    
+       printf("p2... ");
+       scanf("%f", &p2[x]);
+    
+       media[x] = (p1[x] + p2[x]) / 2;
+       
+       if(media[x] < 5){
+         printf("\n reprovado sua nota é %2.1f \n", media[x]);
+       } else{
+         printf("\n aprovado sua nota é %2.1f \n", media[x]);
+       }
+    }
+        system ("pause");
+        return 0;
+}
