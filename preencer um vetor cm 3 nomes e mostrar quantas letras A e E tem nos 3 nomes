@@ -7,12 +7,12 @@
 
 int main()
 {
-   int x,m;
+   int x, m;
    char nome[3][30], conta = 0, conte = 0, tam = 0;
    
    for(x = 0; x < 3; x++){
        printf("\n digite um nome: ");
-       scanf("%c",nome[x]);
+       gets(nome[x]);
    }
    
    for(x = 0; x < 3; x++){
@@ -24,8 +24,6 @@ int main()
            conte++;
        }
    }
-   
-   
    
    printf("\nNos nomes distintos tem %d Letras A e %d de Letras E", conta, conte);
    printf("\n\n");
